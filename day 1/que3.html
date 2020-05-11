@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<title> Dynamic printing </title>
+    <script>
+        function disp(){
+            var name = document.getElementById("name").value;
+            document.getElementById("h1").innerHTML=name;
+            document.getElementById("h2").innerHTML=name
+            document.getElementById("h3").innerHTML=name
+            document.getElementById("h4").innerHTML=name
+            document.getElementById("h5").innerHTML=name
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <label>Your Name :</label>
+        <input type="text" id="name" ></input></br>
+        <button type="submit" onclick="disp()">Submit</button>
+    </div>
+    <h5 id="h5"></h5>
+    <h4 id="h4"></h4>
+    <h3 id="h3"></h3>
+    <h2 id="h2"></h2>
+    <h1 id="h1"></h1>
+   
+    </body>
+</html>

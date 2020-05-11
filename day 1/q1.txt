@@ -1,0 +1,18 @@
+function highest(x,y,z) 
+	{
+		max=0;
+		if(x>y)
+		{
+			max=x;
+		}
+		else
+		{
+			max=y;
+		}
+		if(z>max)
+		{
+			max=z;
+		}
+		return max;
+	}
+	console.log(highest(10,20,30));
