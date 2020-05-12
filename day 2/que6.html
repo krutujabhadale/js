@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Copy</title>
+</head>
+<body>
+<input type="text" name="first" id="nm1">
+<input type="text" name="second" id="nm2">
+<button onclick="copy()">click</button>
+<script type="text/javascript">
+	function copy() 
+	{
+		document.getElementById('nm2').value=document.getElementById('nm1').value;
+	}
+</script>
+</body>
+</html>

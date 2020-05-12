@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<p id="srt"></p>
+	<button onclick="check()">sorted array</button>
+	<script type="text/javascript">
+		var arr=[10, 20, 36, 2, 3, 8, 100, 98, 56, 86];
+		document.getElementById('srt').innerHTML = arr;
+		function check() 
+		{
+			arr.sort(function(a,b){return a - b});
+			document.getElementById('srt').innerHTML = arr;
+		}
+	</script>
+
+</body>
+</html>
