@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>reverse sort</title>
+</head>
+<body>
+<p id="srt"></p>
+<button onclick="check()">Check sorted string !</button>
+<script type="text/javascript">
+	var names=["moscow", "berlin", "rio", "denver", "tokyo", "nairobi", "oslo", "helsinki", "sergio"];
+	document.getElementById('srt').innerHTML=names;
+	function check()
+	{
+		names.sort();
+		names.reverse();
+		document.getElementById('srt').innerHTML=names;
+	}
+</script>
+</body>
+</html>
