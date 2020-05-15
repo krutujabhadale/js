@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Square and cube</title>
+</head>
+<body>
+	Enter number :
+	<input type="text" name="num2" id="num2"><br><br>
+	<button onclick="check(num2.value)">Find square and cube</button>
+	<p id="num"></p>
+	<p id="num1"></p>
+<script type="text/javascript">
+	class math1
+	{
+		constructor(num)
+		{
+			this.num=num;
+		}
+		static sqr(x)
+		{
+			return (x.num*x.num);
+		}
+		static cube(x)
+		{
+			return (x.num*x.num*x.num);
+		}
+	}
+	
+	function check(num) 
+	{
+		m1 = new math1(num);
+		
+	document.getElementById('num').innerHTML="Square is :"+math1.sqr(m1);
+	document.getElementById('num1').innerHTML="cube is :"+math1.cube(m1);
+	}
+</script>
+</body>
+</html>

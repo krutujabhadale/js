@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Inheritance</title>
+</head>
+<body>
+<script type="text/javascript">
+	class account
+	{
+		constructor(name,balance)
+		{
+			this.name=name;
+			this.balance=balance;
+		}
+		deposit(amount)
+		{
+			this.balance+=amount;
+		}
+	}
+	class current_account extends account
+	{
+		constructor(name,balance)
+		{
+			super(name,balance);<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+			
+<body>
+       enter name <input  id="name1">
+       enter cash <input id="name2">
+       enter withdrw amt <input id="name3">
+       <button onclick="check(name1.value,name2.value,name3.value)">click here</button>
+
+      <script type="text/javascript">
+      	class account
+      	{
+      		constructor(name,balance)
+      		{
+               this.name=name;
+               this.balance=parseInt(balance);
+      		}
+      		deposite(amount)
+      		{
+      			return this.balance=this.balance + parseInt(amount);
+      		}
+      	}
+      	class currentaccount extends account
+      	{
+      		constructor(name,balance)
+      		{
+              super(name,balance);  
+      		}
+             withdraw(cut)
+             {
+             	this.balance=this.balance - parseInt(cut);
+             }
+             display()
+			{
+				document.write(this.name+" ", this.balance+"    ");  
+			}
+
+      	}
+      	function check(person,cash,wd) 
+      	{
+      	m1=new currentaccount(person,500);
+      	m1.deposite(cash);
+ 		m1.display();
+      	m1.withdraw(wd);
+      	m1.display();
+      }
+      /*	m2=new currentaccount("ram",1000);
+      	m2.deposite(1000);
+      	m2.display();
+      	m2.withdraw(500);
+      	m2.display();*/
+
+      </script>
+</body>
+</html>
+		}
+		withdraw(amount)
+		{
+			this.balance-=amount;
+		}
+		show()
+		{
+			document.write(this.name,this.balance);
+		}
+	}
+	m1 = new current_account("krutu",500);
+	//m1.deposit(100);
+	m1.withdraw(50);
+	m1.show();
+</script>
+</body>
+</html>

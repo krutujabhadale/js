@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Account</title>
+</head>
+<body>
+Enter Name :
+<input type="text" name="nm1" id="name1">
+Enter Amount :
+<input type="text" name="ac1" id="acc1"><br><br>
+Enter Name :
+<input type="text" name="nm2" id="name2">
+Enter Amount :
+<input type="text" name="ac2" id="acc2"><br><br>
+<button onclick="find1(name1.value,acc1.value,name2.value,acc2.value)">Check balance and Name</button>
+
+
+<script type="text/javascript">
+	class account
+	{
+		constructor(name,balance)
+		{
+			this.name=name;
+			this.balance=parseInt(balance);
+		}
+			deposit(added)
+			{	//parseInt(added);
+				return this.balance += parseInt(added);
+			}
+			display()
+			{
+				document.write("account name is " +this.name+" ", "& balance is " +this.balance+ " ");
+
+			}
+	}
+	function find1(name1,balance1,name2,balance2)
+	{
+	obj1 = new account(name1,2000);
+	obj1.deposit(balance1);
+	obj1.display();
+	obj2 = new account(name2,3000);
+	
+	obj2.deposit(balance2);
+	obj2.display();
+	}
+</script>
+</body>
+</html>

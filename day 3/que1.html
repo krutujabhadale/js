@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<p id="name"></p>
+	<script>
+var fact;
+var f=1,no=4;
+fact = () => {
+  for (var i = 2; i <= no; i++) 
+  	f=f*i;
+  return f;
+       }
+  document.getElementById('name').innerHTML=fact();
+          //factorial = integer => integer==1 ? 1 : (integer * factorial(integer - 1));
+</script>
+
+
+</body>
+</html>
+
