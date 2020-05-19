@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Validation</title>
+</head>
+<body>
+	<fieldset>
+		<legend align="center">Form</legend>
+	<form method="post" onsubmit="return(validte())" action="result.html" align="center">
+	User ID : <input id="uid"><br><br>
+	Password : <input type="Password" id="pass"><br><br>
+	Mobile : <input type="number" id="mob"><br><br>
+	Address : <textarea rows="5" cols="10"></textarea><br><br>
+	Age : <input id="age1"><br><br>
+	<input type="submit">
+</form>
+</fieldset>
+<script type="text/javascript">
+	function validte() 
+	{
+		if(uid.value.length < 3 || uid.value.length > 15)
+		{
+			alert("Please check User id");
+			return false;
+		}
+		if(pass.value.length < 8)
+		{
+			alert("Check Password");
+			return false;
+		}
+		if(mob.value.length != 10)
+		{
+			alert("Invalid mobile num");
+			return false;
+		}
+		if(age1.value < 18 || age1.value > 100)
+		{
+			alert("Invalid age");
+			return false;
+		}
+		return true;
+	}
+</script>
+</body>
+</html>
