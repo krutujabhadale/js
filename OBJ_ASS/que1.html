@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<p id="d"></p>
+	<p id="dm"></p>
+<script type="text/javascript">
+	class employee
+	{
+		set memberid(id)
+		{
+
+			this.id=id;
+		}
+		set empname(name)
+		{
+			this.name=name;
+		}
+		set esalary(salary)
+		{
+			this.salary=salary;
+		}
+		get membersid()
+		{
+			return this.id;
+		}
+		get empname()
+		{
+			return this.name;
+		}
+		get esalary()
+		{
+			return this.salary;
+		}
+		get netsalary()
+		{
+			return this.salary-10*this.salary/100;
+		}
+	};
+	e1 = new employee();
+	e2 = new employee();
+	e1.memberid = 1;
+	e1.empname = "sergio";
+	e1.esalary = 1000;
+	e2.memberid = 2;
+	e2.empname = "Raquel";
+	e2.esalary = 2000;
+	document.getElementById("d").innerHTML=e1.membersid + " " + e1.empname + " " + e1.esalary
+			+ " " +e1.netsalary;
+	document.getElementById("dm").innerHTML=e2.membersid + " " + e2.empname + " " + e2.esalary
+			+ " " +e2.netsalary;
+</script>
+</body>
+</html>

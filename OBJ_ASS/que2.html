@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Student</title>
+</head>
+<body>
+	<p id="s"></p>
+<script type="text/javascript">
+	class student
+	{
+		set rollno(roll)
+		{
+			this.roll = roll;
+		}
+		set sname(name)
+		{
+			this.name = name;
+		}
+		set marks1(m1)
+		{
+			this.m1 = m1;
+		}
+		set marks2(m2)
+		{
+			this.m2 = m2;
+		}	
+		set marks3(m3)
+		{
+			this.m3 = m3;
+		}
+		get total()
+		{
+			return total = this.m1 + this.m2 + this.m3;
+		}
+		get percentage()
+		{
+			//const t = 300;
+			return total/300*100;
+		}
+		get rollno()
+		{
+			return this.roll;
+		}
+		get sname()
+		{
+			return this.name;
+		}
+		get marks1()
+		{
+			return this.m1;
+		}
+		get marks2()
+		{
+			return this.m2;
+		}
+		get marks3()
+		{
+			return this.m3;
+		}
+	};
+	s1 = new student()
+	s1.rollno = 1;
+	s1.sname = "Nairobi";
+	s1.marks1 = 50;
+	 s1.marks2 = 60;
+	 s1.marks3 = 70;
+	document.getElementById('s').innerHTML = "RollNo :"  + s1.rollno + "<br>" +"Name :" + s1.sname + "<br>" + "Marks1 :" + s1.marks1 + "<br>" + "Marks2 :" + s1.marks2 + "<br>" + "Marks3 :"  + s1.marks3 + "<br>" + "Total :"  + s1.total + "<br>" + "Percentage :"  + s1.percentage;
+</script>
+</body>
+</html>
