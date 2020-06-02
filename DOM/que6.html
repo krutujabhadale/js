@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Add subtract</title>
+</head>
+<body>
+Enter num1 : <input name = "num1" id = "nm1"><br><br>
+Enter num2 : <input name = "num2" id = "nm2"><br><br>
+Result : <input name = "res" id = "rs"><br><br>
+Addition : <input type="radio" name="cal" id = "ad" onclick="add(nm1.value,nm2.value)"><br><br>
+Subtraction : <input type="radio" name="cal" id = "sub" onclick="sub(nm1.value,nm2.value)">
+<br><br>
+<script type="text/javascript">
+	function add(a,b) 
+	{
+		document.getElementById('rs').value = parseInt(a)+parseInt(b);
+	}
+	function sub(a,b)
+	{
+		document.getElementById('rs').value = parseInt(a)-parseInt(b);
+	}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TagName</title>
+</head>
+<body>
+<p id = "1">Hi this is Krutuja bhadale.</p>
+<p id = "2">I am from ratnagiri.</p>
+<p id = "3">Studying in VITA</p>
+<button onclick="disp()">Click..</button>
+<h4 id = "dis"></h4>
+<script type="text/javascript">
+	var a = document.getElementsByTagName('p');
+	for(var i=0;i < a.length;i++)
+     	{
+           a[i].style.background='blue';
+     	}
+function disp() 
+{
+	
+	document.getElementById('dis').innerHTML = a.length;
+}
+</script>
+</body>
+</html>

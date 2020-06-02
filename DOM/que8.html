@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>OL list</title>
+</head>
+<body>
+	<ol id = "name">
+<li>Krutuja</li>
+<li>Abhijeet</li>
+</ol>
+<button onclick="del()">Delete</button>
+<script type="text/javascript">
+	function del() 
+	{
+		var a = document.getElementById('name');
+		a.removeChild(a.childNodes[0]);
+	}
+</script>
+</body>
+</html>

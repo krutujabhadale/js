@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Change background and text color</title>
+	<style type="text/css">
+		p {color : white; background: blue}
+	</style>
+</head>
+<body>
+<p id = "name">Krutuja bhadale</p>
+<button onclick = "show()">Click!</button>
+<script type="text/javascript">
+	function show()
+	{
+		var a = document.getElementById('name');
+	a.style.color = "blue";
+	a.style.background = "white";
+	//document.getElementById('name').style.background-color = "white";
+}
+</script>
+</body>
+</html>

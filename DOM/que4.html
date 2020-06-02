@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Radio buttons</title>
+</head>
+<body>
+<input name="name" id = "nm"><br>
+blue : <input type="radio" name="rad" id = "blue"><br>
+green : <input type="radio" name="rad" id = "green"><br>
+yellow : <input type="radio" name="rad" id = "yellow"><br>
+<button onclick="show()">Click</button>
+<script type="text/javascript">
+	function show()
+	{
+		var a = document.getElementById('nm');
+		if(document.getElementById('blue').checked)
+		{
+			a.style.color = "blue";
+			
+		}
+	   else if (document.getElementById('green').checked)
+		{
+			a.style.color = "green";
+			
+		}
+		else if (document.getElementById('yellow').checked)
+		{
+			a.style.color = "yellow";
+			
+		}
+	}
+</script>
+</body>
+</html>

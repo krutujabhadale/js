@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Span Tag</title>
+</head>
+<body>
+<input type="text" id="nm" onchange="change()">
+<span id = "sp"></span>
+<script type="text/javascript">
+	function change() 
+	{
+		document.getElementById('sp').innerHTML=document.getElementById('nm').value
+	}
+</script>
+</body>
+</html>

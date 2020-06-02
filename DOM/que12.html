@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Checkbox total</title>
+</head>
+<body>
+	<form id = "frm">
+Geeta 550 : <input type="checkbox" id="chk1" value="550"><br><br>
+Ramayan 400 : <input type="checkbox" id="chk2" value="400"><br><br>
+Mahabharat 500 : <input type="checkbox" id="chk3" value="500"><br><br></form>
+<button onclick="total()">ickCl</button><br><br>
+<input type="text" id="total">
+<script type="text/javascript">
+	function total()
+	{
+		var sum = 0;
+		var a = document.getElementById('frm').length;
+		var i;
+		for(i=0;i<a;i++)
+		{
+			if(frm[i].checked)
+				var sum =sum + parseInt(frm[i].value);
+		}
+		document.getElementById('total').value=sum;
+	}
+	
+</script>
+</body>
+</html>
